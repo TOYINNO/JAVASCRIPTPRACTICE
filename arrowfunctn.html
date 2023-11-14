@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Callback and arrow function introduction</h1>
+</body>
+<script>
+    function isEven(x){
+        if (x % 2 === 0) { return `true`
+            
+        }
+        return `false`
+    }
+    console.log(isEven(5))
+
+    //OR
+
+    function isEven(x) {
+        return x % 2 === 0;   
+    }
+    console.log(isEven(78))
+    // Arrow Function
+    //In arrow function, we usually replace the term 'function' and introduce the arrow sign.
+//Remember that we can write that
+    // let getEven = function(x){
+    //     return x % 2 === 0 
+    // }
+// Now, remove the function and replace the arrow sign
+
+let getEven = (x) => {
+    return x % 2 === 0
+}
+console.log(getEven(89))
+
+
+//let's try this one. know that we can use 'map', 'filter' and so forth in place of 'every'. Just understand the syntax and what you want to arrive at.
+
+let result = [2, 4, 6, 8].every(isEven)
+console.log(result)
+
+// To write callbacks = the method you want to use ,enclosed in a parenthesis, input - parenthesis, the arrow function and a curly bracket    e.g; every(() => {})
+
+let answer = [2, 4, 6, 8].every((x) => {
+    return x % 2 === 0
+ 
+})
+console.log(answer)
+
+//note that in most cases the return keyword may not be used. In such cases, we do this: remove the curly brackets and replace it with parenthesis! 
+
+let ans = [2, 4, 6, 8].every((x) => (x % 2 === 0))
+console.log(ans)
+
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array</h1>
+</body>
+<script>
+    let countries = ["India", "USA", "Japan", "Russia"];
+
+    let states = new Array("Rajasthan", "Delhi", "Mumbai", "Assam")
+
+    console.log(states);
+
+    console.log(states[1]);
+
+    console.log(states.length);
+    states[4]= "Punjab";
+    console.log(states)
+
+    let user = new Array("Omolade", "Joba", "Ore", "Chibuike", "Martins", "Jim" );
+    console.log(user);
+
+    user.pop();
+    user.pop();  //this deletes the last one from the list
+    console.log(user)
+    
+    user.unshift("new value")  //to add new value to the front of the list
+    console.log(user);
+
+    user.shift() //deletes the first value of the array 
+    console.log(user);
+
+    console.log(countries.indexOf("India"))
+    console.log(countries.indexOf("USA"))
+    console.log(countries.indexOf("Russia"))
+    
+    
+    console.log(Array.from("India"));
+
+
+
+
+
+
+</script>
+</html>

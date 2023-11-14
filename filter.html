@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILTER</title>
+</head>
+<body>
+    <h1>JavaScript - Fill, Filter, Slice and Splice in Array</h1>
+</body>
+<script>
+    let testArray = [2, 4, 6, 3, 5, 9, 45, 789, 826, 927,90];
+    console.log(testArray)
+
+    // you will notice that the 'fill' method fills the target with what is contained in its braces.
+    console.log(testArray.fill(10))  
+
+    // the first goes for filling the entire list while the second targets what position to start filling from counting from zero. For our example, 2 rep that count from zero until the second number from the start; then fill the rest (starting from the third position). adding 5 (optional) means the position for ending the filling
+    console.log(testArray.fill("h", 2, 5)) 
+
+const myNumber = [2, 4, 6, 3, 5, 9, 45, 789, 826, 927,90]
+
+const res = myNumber.filter((x) => (x < 50))
+
+console.log(res)
+
+let user = ["Elo", "Blessing", "Chidera", "Juliet", "Elohor", "Sammy", "Esther"]
+
+console.log(user.slice(3, 6)) //this means slice out (cut) elements. begin at 3 and end at 6(counting from zero remember)
+
+//let's try splice now. for splice
+
+user.splice(1, 3, "Precious"); // this means to remove any element from a list provided you give it a count e.g in our example; we are saying start from index 1 and cut three out then replace with 'Precious' (you can add as many) and the others remain thesame.
+console.log(user)
+
+
+
+</script>
+</html>

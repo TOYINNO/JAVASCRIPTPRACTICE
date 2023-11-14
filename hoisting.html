@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Hoisting</title>
+</head>
+<body>
+    <h1>Code Hoisting</h1>
+</body>
+<script>
+    function myCar(name){
+        console.log (`${name} is worth 5 million naira`)
+    }
+   myCar("Benz")
+   myCar("Hghlander")
+   myCar("Corola")
+
+//  OR
+//  let myCar = function (name){
+//     console.log (`${name} is worth 5 million naira`)
+//     }
+    
+//     myCar("Benz")
+//     myCar("Hghlander")
+//     myCar("Corollar")
+
+
+function bill(unit){
+    let a = parseInt(unit)   // parseInt was used to make it an integer so that whatever value input e.g string ("") would still run normally
+    let billingSystem = (a + 50)/10
+    console.log(billingSystem)
+
+}
+
+bill("76")
+bill(5900)
+bill(90)
+
+// Temperature converter
+
+function fahrenheit(F){
+    let C = (F - 32) * (5/9)
+    console.log(`Your temperature in degree celcius is: ${C}C`)
+}
+fahrenheit(78.8)
+fahrenheit(50)
+fahrenheit(55)
+fahrenheit(98.98)
+
+
+function celcius(c) {
+    let f = (c * 9/5) + 32
+    console.log(`yout temp in degree fahrenheit is ${f}`)
+}
+
+celcius(26)
+celcius(180)
+celcius(0)
+
+
+
+
+function myName(name){
+    console.log(`${name} is very hardworking`);
+}
+myName("Omolade");
+myName("Blessing");
+
+
+
+
+function bestFriend(){
+    let friend = "Esther"
+    console.log(`my best friend is ${friend}`)
+}
+bestFriend()
+
+
+</script>
+</html>
