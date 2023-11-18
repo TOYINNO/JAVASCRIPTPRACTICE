@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freestyle coding</title>
+</head>
+<body>
+    <h1>Freestyle Coding</h1>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+<script>
+    let firstName = "John"
+    let lastName = "Tolu"
+    let fullName = firstName + " " + lastName
+    console.log(fullName)
+    let identity = fullName.concat(" is my full Name.")
+    console.log(identity)
+    let greeting = `Good afternoon ${firstName}\n Let's have dinner together` // \n is used to create new lines
+    console.log(greeting)
+
+
+let header = document.querySelector('h1').textContent
+let lists = document.querySelectorAll('ul li')
+
+lists[0].textContent = header.toUpperCase()
+lists[1].innerHTML = `I have decided to do ${header}`
+lists[2].innerHTML = `My intentions are to start ${header.concat(" and extensive practice alongside")}`
+lists[3].innerHTML = header.length
+lists[4].innerHTML = header.indexOf("C")
+lists[5].innerHTML = header.lastIndexOf("e")
+lists[6].innerHTML = header.substr(10, 4) //SUBSTR(START,LENGTH) 
+lists[7].innerHTML = header.replace("Coding", "Practice") //REPLACE(SEARCHVALUE, REPLACEVALUE)
+lists[8].innerHTML = header.replaceAll("e", "A") //REPLACE(SEARCHVALUE, REPLACEVALUE)
+lists[9].innerHTML = header.trim(" ") //Removes whitespace from the beginning and end. (Removes whitespace from the beginning of the string. Example:
+// • let str = " Hello, World! "
+// • let trimmedStart = str.trimStart()
+// trimmedStart contains "Hello, World! ")  same applies to trimEnd()
+lists[10].innerHTML = header.split("")
+let str = " free style coding"
+lists[11].innerHTML = str.padStart(27, "Excellent") //Pads the string from the start with a specified character or characters to reach the desired length. Also see 'padEnd'.
+
+
+
+
+
+</script> 
+</html>
