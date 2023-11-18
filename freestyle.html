@@ -6,8 +6,11 @@
     <title>Freestyle coding</title>
 </head>
 <body>
-    <h1>Freestyle Coding</h1>
+    <h1 id="Fr">Freestyle Coding</h1>
     <ul>
+        <li></li>
+        <li></li>
+        <li></li>
         <li></li>
         <li></li>
         <li></li>
@@ -55,6 +58,28 @@ lists[9].innerHTML = header.trim(" ") //Removes whitespace from the beginning an
 lists[10].innerHTML = header.split("")
 let str = " free style coding"
 lists[11].innerHTML = str.padStart(27, "Excellent") //Pads the string from the start with a specified character or characters to reach the desired length. Also see 'padEnd'.
+
+//Differences btw 'textContent', 'innerText' and 'innerHTML'
+
+let address = `
+Uduogo Street,
+Opposite <strong>KTF Hotel</strong> Oha,
+Okpe LGA,
+Delta State, Nigeria.
+`
+lists[12].textContent = address
+lists[13].innerText = address
+lists[14].innerHTML = address
+
+//Creating new element in DOM
+const newHeader = document.createElement('h2')
+newHeader.textContent = 'Understanding the DOM'  //Now we are going to put this new header we just created in the DOM using the document.body. AppendChild means to put some inside another.
+document.body.appendChild(newHeader)
+
+//now To elements use - 'remove()'
+
+// let remov = document.getElementById('Fr')
+// remov.remove()
 
 
 
