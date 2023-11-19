@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .space {
+            display: flex; 
+            justify-content: space-between;
+        }
+    </style>
+<body>
+<!-- The Date object works with dates and times.
+    Date objects are created with new Date(). -->
+
+<button onclick="document.getElementById('demo').innerHTML=new Date()">The time is?</button> 
+
+
+<p id="demo"></p>
+
+
+<!-- Here, the code changes the content of its own element (using this.innerHTML): -->
+<button onclick="this.innerHTML = Date()">The date and time is?</button>
+<section>
+    <div>
+        <ul>
+            <li class="space"><strong>Event</strong> 	<span><strong>Description</strong></span></li>
+            <li class="space">onchange	<span>An HTML element has been changed</span></li>
+            <li class="space">onclick	<span>The user clicks an HTML element</span></li>
+            <li class="space">onmouseover	<span>The user moves the mouse over an HTML element</span></li>
+            <li class="space">onmouseout	<span>The user moves the mouse away from an HTML element</span></li>
+            <li class="space">onkeydown	<span>The user pushes a keyboard key</span> </li>
+            <li class="space">onload	<span>The browser has finished loading the page
+            </span></li>
+                
+           </ul>
+    </div>
+</section>
+
+</body>
+</html>
