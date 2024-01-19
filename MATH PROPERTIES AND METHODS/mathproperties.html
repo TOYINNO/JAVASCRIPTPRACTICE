@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.round()</h2>
+
+<p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+
+<p id="demo"></p>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<script>
+document.getElementById("demo").innerHTML = Math.round(4.6);
+let paragraph = document.createElement('p')
+paragraph = Math.round(4.333)
+document.body.append(paragraph)
+// alert(paragraph)
+// document.createElement('p').innerHTML = Math.round(4.6);
+
+let list = document.querySelectorAll('ul li')
+list[0].innerHTML = Math.floor(4.9)  //Math.floor(x) returns the value of x rounded down to its nearest integer:
+list[1].innerHTML = Math.floor(4.9)
+list[2].innerHTML = Math.trunc(4.9)
+list[3].innerHTML = Math.pow(2,4) //i.e 2^4 = 16
+list[4].innerHTML = Math.sqrt(81) //square root
+list[5].innerHTML = Math.sin(90).toFixed() //the sine of 90 degrees
+list[6].innerHTML = Math.cos(0) 
+//Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments
+list[7].innerHTML = Math.min(150, 70, 55, 88, 6, 4, 27) 
+list[8].innerHTML = Math.max(150, 70, 55, 88, 6, 4, 27)  
+list[9].innerHTML = Math.log(1) 
+list[10].innerHTML = Math.log10(10000) 
+list[11].innerHTML = Math.cbrt(8) 
+list[12].innerHTML = Math.exp(10) 
+list[13].innerHTML = Math.log10(1000) 
+
+</script>
+
+</body>
+</html>

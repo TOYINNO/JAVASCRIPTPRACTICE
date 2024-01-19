@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Functions in JavaScript</h1>
+    <p id="p"></p>
 </body> 
 <script>
     function sayHello(name){
@@ -21,5 +22,32 @@
     }
     let greetings = namstey();
     console.log(greetings);
+
+    const myFunction = function (a, b) {
+        return a*b
+    }
+   document.getElementById('p').innerHTML= myFunction(6, 5)
+
+
+
+
+
+   function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return confirm('Do you have permission from your parents?');
+  }
+}
+
+let age = prompt('How old are you?');
+
+if ( checkAge(age) ) {
+  alert( 'Access granted' );
+} else {
+  alert( 'Access denied' );
+}
+   
+  
 </script>    
 </html> 

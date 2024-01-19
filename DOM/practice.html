@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM MANIPULATION</title>
+</head>
+<body>
+    <h1>DOM Manipulation</h1>
+    <p id="demo"></p>
+    <p></p>
+    <div><img id="image"></img></div>
+    <p class="test"></p>
+    <input type="text" id="myText" value="Hello">
+    <p>Want to know how to target elements in a DOM?<button id="btn">Click here</button></p>
+    <p></p>
+    <p></p>
+</body>
+<script>
+// document.getElementById('demo').style.display = "none"
+document.getElementById('demo').innerHTML = `Hello World! \t  My name is Omolade, I am a Front-end developer`
+document.getElementById('demo').style.color = "blue"
+document.getElementById('demo').style.fontSize = "20px"
+document.getElementsByTagName('p')[1].innerHTML = "How the DOM works"
+document.getElementsByClassName("test")[0].innerHTML = "Knowing how to target elements"
+document.getElementById('image').src = "../dome.avif"
+document.getElementById('image').title = "Dome-shaped World"
+document.getElementById('myText').value = "Have a nice day!"
+document.getElementById("btn").addEventListener("click", myFunction)
+
+
+</script>
+</html>
